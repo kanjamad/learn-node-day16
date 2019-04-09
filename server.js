@@ -36,6 +36,7 @@ app.get('/', (req,res)=>{
 app.get('/api/burger', (req,res)=>{
     res.json(burgers);
 });
+// http://localhost:3000/api/taquerias
 
 
 app.get('/pick-a-color/:choice',(req,res)=>{
@@ -45,10 +46,12 @@ app.get('/pick-a-color/:choice',(req,res)=>{
 app.get('/pick-a-name/:name',(req,res)=>{
     res.send(`<h1>Pick a name ${req.params.name}</h1>`)
 });
+// http://localhost:3000/pick-a-name/Kate
 
 app.get('/pick-a-name',(req,res)=>{
     res.send(`<h1>Pick a name ${req.query.Firstname}</h1>`)
 });
+http://localhost:3000/pick-a-name?Firstname=Kate
 
 
 // query
